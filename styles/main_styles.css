@@ -258,6 +258,7 @@ section
 	width: 100%;
 	height: 100%;
 }
+
 .background_image
 {
 	position: absolute;
@@ -393,7 +394,7 @@ section
 .home
 {
 	width: 100%;
-	height: 888px;
+	height: 500px;
 }
 .home_container
 {
@@ -402,95 +403,13 @@ section
 	left: 0;
 	width: 100%;
 }
-.home_subtitle
-{
-	font-size: 60px;
-	font-weight: bold;
-	line-height: 0.75;
+
+.img-logo { 
+	position: relative;
+	top: 150px;
+	left: 40%;
 }
-.home_title
-{
-	margin-top: 10px;
-}
-.home_title h1
-{
-	font-size: 72px;
-	color: #FFFFFF;
-}
-.home_text
-{
-	max-width: 875px;
-	margin-top: 14px;
-}
-.home_text p
-{
-	color: #FFFFFF;
-}
-.scroll_icon
-{
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	bottom: 25px;
-	width: 14px;
-	height: 28px;
-	border: solid 2px #FFFFFF;
-	border-radius: 7px;
-}
-.scroll_icon::after
-{
-	display: block;
-	position: absolute;
-	top: 5px;
-	left: 3px;
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
-	background: #FFFFFF;
-	content: '';
-	-webkit-animation-name: scroll;
-	animation-name: scroll;
-	-webkit-animation-duration: 1500ms;
-	animation-duration: 1500ms;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-}
-@-webkit-keyframes scroll
-{
-	0%
-	{
-		opacity: 1;
-	}
-	100%
-	{
-		opacity: 0;
-		-webkit-transform: translateY(10px);
-		-moz-transform: translateY(10px);
-		-ms-transform: translateY(10px);
-		-o-transform: translateY(10px);
-		transform: translateY(10px);
-	}
-}
-@keyframes scroll
-{
-	0%
-	{
-		opacity: 1;
-	}
-	100%
-	{
-		opacity: 0;
-		-webkit-transform: translateY(10px);
-		-moz-transform: translateY(10px);
-		-ms-transform: translateY(10px);
-		-o-transform: translateY(10px);
-		transform: translateY(10px);
-	}
-}
+
 
 /*********************************
 6. Intro
@@ -500,7 +419,7 @@ section
 {
 	width: 100%;
 	background: #FFFFFF;
-	padding-top: 102px;
+	padding-top: 200px;
 	padding-bottom: 102px;
 }
 .intro_image
@@ -749,6 +668,7 @@ section
 	padding-top: 70px;
 	padding-bottom: 60px;
 }
+
 .footer_logo_title
 {
 	font-size: 57px;
@@ -790,6 +710,11 @@ section
 	padding-left: 8px;
 	margin-right: 11px;
 }
+
+.footer_contact {
+	position: relative;
+	left: 450px;
+}
 .footer_contact_text
 {
 	font-size: 16px;
@@ -815,18 +740,55 @@ section
 
 /************* Containers ****/
 
+.container-cafespelen {
+	width: 50%;
+	
+}
+
+.container-bier {
+	display: flex;
+	width: 100%;
+	align-content: end;
+	flex-direction: row-reverse;
+
+}
+
+.container-sterke-dranken {
+	width: 50%;
+}
+
+.container-feestjes {
+	display: flex;
+	width: 100%;
+	align-content: end;
+	flex-direction: row-reverse;
+
+}
+
 .container-cafespelen-text {
 	margin: 100px;
+	
 }
 
 .container-bier-text {
 	margin: 100px;
+	width: 50%;
+	
 }
 
 .container-sterke-dranken-text {
 	margin: 100px;
+	
 }
 
 .container-feestjes-text {
 	margin: 100px;
+	width: 50%;
+	
+}
+
+h2 {
+	
+	margin-bottom: 100px;
+	text-transform: uppercase;
 }
